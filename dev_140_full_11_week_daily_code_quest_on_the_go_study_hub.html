@@ -1273,7 +1273,7 @@
     // =========================================================
     let appState = {
       xp: 0,
-      streak: 1,
+      streak: 1, 
       sfxMuted: false,
       activeTab: 'quest',
       questSubMode: 'bug',
@@ -1316,8 +1316,7 @@
           appState.xp = Number(parsed.xp) || 0;
           appState.streak = Number(parsed.streak) || 1;
           appState.solvedBugs = parsed.solvedBugs || {};
-          appState.lastPracticDate = parsed.lastPracticeDare || null;
-          appState.solvedBugs = parsed.solvedBugs || {};
+          appState.lastPracticeDate = parsed.lastPracticeDate || null;
           appState.answeredPolls = parsed.answeredPolls || {};
           appState.masteredCards = parsed.masteredCards || {};
           if (parsed.rubricScores) {
