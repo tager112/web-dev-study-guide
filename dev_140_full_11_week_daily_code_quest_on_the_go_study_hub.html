@@ -1316,6 +1316,8 @@
           appState.xp = Number(parsed.xp) || 0;
           appState.streak = Number(parsed.streak) || 1;
           appState.solvedBugs = parsed.solvedBugs || {};
+          appState.lastPracticDate = parsed.lastPracticeDare || null;
+          appState.solvedBugs = parsed.solvedBugs || {};
           appState.answeredPolls = parsed.answeredPolls || {};
           appState.masteredCards = parsed.masteredCards || {};
           if (parsed.rubricScores) {
